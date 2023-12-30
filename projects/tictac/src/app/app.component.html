@@ -1,0 +1,14 @@
+<div>
+  <h1>hello</h1>
+  <div class="container">
+    <div (click)="clickDiv()">div</div>
+    <div class="svgdiv" *ngIf="board.length > 0">
+      <svg viewBox="0 0 140 50" xmlns="http://www.w3.org/2000/svg">
+        <polygon *ngFor="let box of board" [attr.points]="box.point" [attr.data-row]="box.row" [attr.data-column]="box.column" fill="none" stroke="black" stroke-width="0.2" (click)="onpolygonclick($event)" >
+          
+        </polygon>
+      </svg>  
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

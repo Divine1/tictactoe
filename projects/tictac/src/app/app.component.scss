@@ -1,0 +1,23 @@
+
+svg {
+   // pointer-events: all;
+}
+
+.container{
+    .cell{
+        border: 1px solid black;
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        display: inline-block;
+    }
+    .svgdiv{
+        width: 40rem;
+        background-color: orange;
+        svg{
+            polygon{
+                cursor: pointer;
+            }
+        }
+    }
+}
